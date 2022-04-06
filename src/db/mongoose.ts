@@ -1,6 +1,5 @@
-import dotenv from "dotenv";
+import "dotenv/config";
 import mongoose from "mongoose";
 
-dotenv.config();
-
-mongoose.connect(process.env.DB_URL);
+mongoose.connect(process.env.DB);
+console.log(process.env.DB);
